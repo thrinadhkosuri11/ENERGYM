@@ -1,4 +1,5 @@
-FROM  centos:latest
+FROM  nginx:latest
+COPY  /usr/share/nginx/html
 MAINTAINER thrinadhkosuri11@gmail.com
 RUN cd /etc/yum.repos.d/
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
